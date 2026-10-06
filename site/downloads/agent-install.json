@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "pets": {
+    "full": {
+      "name": "无声铃鹿-胜负服全身手绘风格",
+      "package_file": "suzuka-race-outfit-fullbody-handdrawn-portable.zip",
+      "package_sha256": "a92b73a49867c5025cec39bfdff2713540cdf6545c7991cb37a60303539a7bdd",
+      "config_path": "suzuka-race-outfit-fullbody-handdrawn/pet.json",
+      "readme_path": "suzuka-race-outfit-fullbody-handdrawn/README.md",
+      "spritesheet_path": "suzuka-race-outfit-fullbody-handdrawn/spritesheet.png",
+      "spritesheet_sha256": "fe398d3562d90af9dcb8602393edd6a15aae788f19b3b967251efa3577732075",
+      "updated_at": "v1.3"
+    },
+    "half": {
+      "name": "无声铃鹿-运动服半身手绘风格",
+      "package_file": "suzuka-tracksuit-halfbody-handdrawn-portable.zip",
+      "package_sha256": "01d20335f39f283d867afbb5309703d7d89fb52707728c7819ad55ad7d18e610",
+      "config_path": "suzuka-tracksuit-halfbody-handdrawn/pet.json",
+      "readme_path": "suzuka-tracksuit-halfbody-handdrawn/README.md",
+      "spritesheet_path": "suzuka-tracksuit-halfbody-handdrawn/spritesheet.png",
+      "spritesheet_sha256": "af5c28043f6355ad4763b7d70cf99529d938a822ad8f38bea867ab7e372a6194",
+      "updated_at": "v1.3"
+    }
+  }
+}
