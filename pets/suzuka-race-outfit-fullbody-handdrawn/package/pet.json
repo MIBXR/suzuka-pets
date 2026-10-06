@@ -1,0 +1,33 @@
+{
+  "manifest_type": "portable-pet",
+  "schema_version": 1,
+  "slug": "suzuka-race-outfit-fullbody-handdrawn",
+  "name": "无声铃鹿-胜负服全身手绘风格",
+  "description": "温柔安静的二头身无声铃鹿，栗色长发、碧绿眼眸与绿白胜负服，搭配两条飘带耳饰，以柔和配色和可爱手绘线条陪伴工作。",
+  "artwork_version": "v1.0",
+  "sprite": {
+    "version": 2,
+    "file": "spritesheet.png",
+    "format": "PNG",
+    "width": 1536,
+    "height": 2288,
+    "cell_width": 192,
+    "cell_height": 208,
+    "columns": 8,
+    "rows": 11,
+    "frame_counts": [
+      6,
+      8,
+      8,
+      4,
+      5,
+      8,
+      6,
+      6,
+      6,
+      8,
+      8
+    ],
+    "sha256": "5b90a2172410ff913c36c710a80941809b44c79d3163266006f1b64a0f5e6422"
+  }
+}
