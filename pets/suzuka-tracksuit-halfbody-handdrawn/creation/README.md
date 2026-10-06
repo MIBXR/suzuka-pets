@@ -11,6 +11,7 @@
 - [采用的角色主形象](references/canonical-base.png)
 - [角色特征参考板](references/identity-plate.png)
 - [方向与边界参考板](references/direction-support-and-boundaries.png)
+- [注视方向使用的中性姿态参考](references/look-neutral-idle.png)
 
 [角色主形象提示词](prompts/character.md)记录整体风格、特征与构图要求。动作由保存的 imagegen 生成原稿制作，再进行去背景、选帧、位置调整和配色处理，形成[成品图集](../package/spritesheet.png)。
 
@@ -31,7 +32,8 @@
 | 注视方向 9–16 | 补齐后八个方向，使十六方向形成完整一圈。 | [提示词](prompts/look-row-10.md) · [高清原稿](../materials/look-row-10.png) |
 
 提示词保留实际采用的文字。高清原稿保存生成阶段的细节，成品图集保存最终选择的帧与排列。
+注视方向沿用保存的中性姿态参考；待机采用独立的眨眼原稿。
 
-## v1.1
+## v1.2
 
-更新工作状态的原稿与电脑表现，保留其余动作。
+更新待机眨眼、等待、工作和检查动作，调整整组配色与位置；八帧待机原稿选用六帧进入成品。
