@@ -4,7 +4,7 @@
   "slug": "suzuka-tracksuit-halfbody-handdrawn",
   "name": "无声铃鹿-运动服半身手绘风格",
   "description": "半眯绿眼、三角笑嘴的半身无声铃鹿，长直栗发搭配红白运动服；悠闲自信的手绘涂鸦风，工作时在小笔记本上敲键盘。",
-  "artwork_version": "v1.0",
+  "artwork_version": "v1.1",
   "sprite": {
     "version": 2,
     "file": "spritesheet.png",
@@ -28,6 +28,6 @@
       8,
       8
     ],
-    "sha256": "32648ebaef78fa66f50ef8f255888da324cd196f72ad39bb349d954700e870ee"
+    "sha256": "ee5a80417b60acd1200447509bd03fc5888cbc909bff477dbdbfc3d7d7dea5ae"
   }
 }

@@ -16,7 +16,7 @@
 
 ![运动服半身铃鹿待机](pets/suzuka-tracksuit-halfbody-handdrawn/package/previews/idle.gif) ![运动服半身铃鹿挥手](pets/suzuka-tracksuit-halfbody-handdrawn/package/previews/waving.gif)
 
-**v1.0** · [作品与动作](pets/suzuka-tracksuit-halfbody-handdrawn/) · [制作记录](pets/suzuka-tracksuit-halfbody-handdrawn/creation/README.md) · [高清原稿](pets/suzuka-tracksuit-halfbody-handdrawn/materials/) · [下载便携包](https://github.com/MIBXR/suzuka-pets/releases/tag/v1.0-suzuka-tracksuit-halfbody-handdrawn)
+**v1.1** · [作品与动作](pets/suzuka-tracksuit-halfbody-handdrawn/) · [制作记录](pets/suzuka-tracksuit-halfbody-handdrawn/creation/README.md) · [高清原稿](pets/suzuka-tracksuit-halfbody-handdrawn/materials/) · [下载便携包](https://github.com/MIBXR/suzuka-pets/releases/tag/v1.1-suzuka-tracksuit-halfbody-handdrawn)
 
 ## 版本与来源
 
