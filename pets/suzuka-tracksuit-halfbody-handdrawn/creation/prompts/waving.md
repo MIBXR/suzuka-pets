@@ -1,0 +1,18 @@
+Create one horizontal animation strip for ChatGPT pet `suzuka-v2`, state `waving`.
+
+Use the attached canonical base for identity. Use the attached layout guide only for slot count, spacing, centering, and padding; do not draw the guide.
+
+Output exactly 4 head-and-tiny-torso frames in one left-to-right row on flat pure blue #0000FF. Treat the row as 4 invisible equal-width slots: one centered complete pose per slot, evenly spaced, with no overlap, clipping, empty slots, labels, or borders.
+
+Identity: same pet in every frame: Silence Suzuka exactly as reference: huge rounded head and tiny red-white track-jacket torso, compact self-contained avatar/bust silhouette with a curved lower edge. User requested a compact avatar instead of a standard full-body illustration, so do not add legs, skirt, boots or green-white racing dress. Half-lidded jade-teal eyes with low black horizontal upper lids, straight orange-brown bangs and long straight side hair, green horse ears, thin white headband, viewer-left green-yellow round ribbon with hanging green-yellow straps, viewer-right small gray diamond hair clip, pale blush cheeks, tiny open triangular orange smile, brown tail attached behind body, red sleeves and white zip-front high collar shirt. Hand-drawn heavy slightly uneven black outline, flat warm colors with subtle paper-like texture. No Japanese writing, no motion marks. Idle keeps eyes in the original half-open shape throughout and uses gentle breathing and a few pixels of hair/tail sway suited to the apps slow 6.6s loop.. Preserve silhouette, face, proportions, markings, palette, material, style, and props.
+Style: Pet-safe sprite: compact head-and-tiny-torso mascot, readable in a 192x208 cell, clear silhouette, simple face, stable palette/materials, and crisp edges for chroma-key extraction. Style `auto`: Infer the most appropriate pet-safe style from the user request and reference images, then keep that exact style consistent across every row. User style notes: Faithfully match the supplied hand-drawn chibi avatar. Not pixel art, not polished anime, not glossy vector, not 3D. Preserve half-lidded mischievous expression, squarish straight hair ends, round tiny hands, thick irregular black ink and subtle grain..
+Animation continuity: keep apparent pet scale and baseline stable within the row unless the state itself intentionally changes vertical position, such as `jumping`. Move the pose within the slot instead of redrawing the pet larger or smaller frame to frame.
+
+State action: Greeting loop: paw or limb down, raised, tilted, and returning in a friendly attention gesture.
+
+State requirements:
+- Show the greeting through paw, hand, wing, or limb pose only.
+- Do not draw wave marks, motion arcs, lines, sparkles, symbols, or floating effects around the gesture.
+
+Clean extraction: crisp opaque edges, safe padding, no scenery, text, guide marks, checkerboard, shadows, glows, motion blur, speed lines, dust, detached effects, stray pixels, or chroma-key colors inside the pet.
+Input image roles: Image 1 original source art, Image 2 cropped source identity, Image 3 invisible four-slot spacing guide, Image 4 approved canonical mascot. Image 4 is authoritative for shape, scale, all details. This is a complete compact avatar with a smoothly closed curved lower silhouette; never a cropped open torso. EXACT FOUR FRAMES. Viewer-left hand: frame 1 rests below face, frame 2 raises open hand beside face, frame 3 same raised open hand tilted outward, frame 4 lowers hand close to frame 1 for loop. No other limb, no new accessories. Keep the torso and head position fixed.
