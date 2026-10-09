@@ -25,10 +25,12 @@
 | 首屏与角色介绍 | 胜负服全身款和运动服半身款并排登场；点击名字，可以和对应的铃鹿打招呼。 |
 | 日常动作 | 同步切换九种动作，比较两款的姿态和表情；可以暂停网页动画。 |
 | 十六方向注视 | 移动指针或手动选择方向，让两款铃鹿一起看向目标；触屏也可以操作。 |
-| 下载与安装 | 两款分别提供便携 ZIP 和可复制的 Agent 安装指令，并可选择安装后是否启用。 |
+| 下载与安装 | 两款分别提供便携 ZIP 和可复制的 Agent 安装指令，按 Codex、兼容 Agent 或 PetDex 的目录安装，并可选择安装后是否启用。 |
 | 制作细节与来源 | 展示挥手、待机、工作和注视等细节，保留角色与参考插画的来源署名。 |
 
 页面保留了不同屏幕尺寸的布局、系统明暗主题与减少动态效果的适配。
+
+安装指令不要求 `codex` 命令。支持 v2 的 Codex 使用实际 `CODEX_HOME`（默认 `~/.codex`）下的 `pets/<slug>/`；其他 Agent 使用其文档或配置确认的兼容宠物目录；没有可用目录时使用 PetDex 的 `~/.petdex/pets/<slug>/`。本地配置按目标客户端格式适配，保留原始图集与 v2 标记；PetDex 目录中的文件需要由 PetDex Desktop 或兼容客户端加载。目录与配置参考 [Codex 桌宠约定](https://github.com/openai/skills/blob/main/skills/.curated/hatch-pet/references/codex-pet-contract.md)和 [PetDex CLI 文档](https://github.com/crafter-station/petdex/blob/main/packages/petdex-cli/README.md)。
 
 ## 这份网站作品包含什么
 

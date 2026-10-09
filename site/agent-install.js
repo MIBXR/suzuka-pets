@@ -4,10 +4,11 @@
   if (!cards.length) return;
 
   function buildPrompt(pet, packageUrl, activate) {
+    const slug = pet.config_path.split('/')[0];
     const mode = activate
-      ? '导入完成后，将这只铃鹿设为当前桌宠，并核实启用结果。'
-      : '只导入到宠物列表，保持我当前使用的桌宠不变。';
-    return `请帮我安装「${pet.name}」。这是已经做好的桌宠，请直接导入现有素材。
+      ? '安装完成后，将这只铃鹿设为当前桌宠，并核实启用结果。'
+      : '只安装这只铃鹿，保持我当前使用的桌宠不变。';
+    return `请帮我安装「${pet.name}」。这是采用 PetDex sprite v2 的便携桌宠，请直接使用现有素材；安装不以存在 codex 命令为前提。
 
 安装要求：${mode}是否启用仅按本条指令执行。
 
@@ -17,15 +18,18 @@
 素材版本：${pet.updated_at}，v2，1536×2288 像素。
 
 请完成以下步骤：
-1. 确认你能下载和解压文件，并且目标环境有支持 v2 的 Pets 导入工具或应用明确支持的导入方式。若缺少能力，请指出需要开启的入口和剩余步骤。
+1. 确认本次目标应用与用户主目录（Windows 通常为 USERPROFILE，不是项目工作目录）：用户已指定目标时按其执行，否则以当前 Agent 的宿主为目标，按以下顺序选择安装目录：
+   - Codex：确认目标客户端支持 sprite v2；读取实际 CODEX_HOME，未设置时使用用户主目录下的 .codex，安装到该目录的 pets/${slug}/。可直接安装文件，不要求运行 codex 命令。若客户端仅支持 v1，保留原图并改用下面的 PetDex 目录。
+   - 其他 Agent：确认它支持 PetDex sprite v2，并从该 Agent 的文档或实际配置取得宠物目录，再安装到其中的 ${slug}/；不要猜测目录。
+   - 没有可用的 Agent 宠物目录：安装到用户主目录下的 .petdex/pets/${slug}/（即 ~/.petdex/pets/${slug}/）。这是 PetDex 标准目录；文件安装后需 PetDex Desktop 或兼容客户端加载。
 2. 下载上面的 ZIP，校验压缩包 SHA-256 后安全解压；这是网页“下载压缩包”按钮提供的同一份包。不要让我另外手动下载或上传已有素材。
 3. 阅读包内 ${pet.readme_path} 和 ${pet.config_path}；按配置使用完整名称与描述。导入文件是 ${pet.spritesheet_path}。核对其 SHA-256、透明 PNG 格式、1536×2288 尺寸及 pet.json 中的 sprite.version=2。
 4. 原样保留图集与动画。不要重新绘制、生成图片、转换为 v1，也不要用预览 GIF、网页高清展示图或设计稿代替正式 spritesheet.png。
-5. 检查当前环境的宠物列表。只有确认名称、格式和素材校验值都一致时才复用已有记录；不能仅凭同名判断是相同版本。不要覆盖其他宠物。跨账号安装以目标环境返回的新记录身份为准。
-6. 若使用 Pets 工具，先对解压后的原始 PNG 调用 validate_pet_spritesheet；通过后调用 prepare_pet_upload，按工具要求完成上传，再使用返回的 upload.upload_session_id 调用 create_pet。以创建返回的新 pet.id 为准；不要保存或复用临时上传会话。若使用其他受支持的导入方式，请遵循目标应用的实际流程。
-7. ${mode}重新检查宠物列表或目标应用，确认安装记录、名称、素材版本和启用状态。若仍需刷新、应用确认或显示桌宠，请清楚说明最后一步；不要把“下载成功”当作“安装成功”。
+5. 检查目标目录或宠物列表。只有确认名称、格式和素材校验值都一致时才复用已有安装；不能仅凭同名判断是相同版本，也不要覆盖其他宠物。使用目标应用支持的文件安装或导入方式。Codex / PetDex 本地安装时，保留包内元数据，并在目标 pet.json 中设置 id="${slug}"、displayName=包内 name、description=包内 description、spritesheetPath="spritesheet.png"、spriteVersionNumber=2；其他 Agent 按它支持的配置格式适配。不要把生图、云端上传工具或 codex 命令当作安装前置条件。
+6. ${mode}按目标应用支持的方式处理启用状态。若只能完成 PetDex 目录安装，明确说明文件已安装、尚待兼容客户端加载；不要声称已经显示或启用。
+7. 回读目标目录中的配置和图集校验值；能检查应用时，再核实宠物记录与启用状态。若仍需刷新或应用确认，请清楚说明最后一步。
 
-请在结束时告诉我：是否安装成功、安装的是哪一款，以及是否已设为当前桌宠。`;
+请在结束时告诉我：目标应用、实际安装路径、安装的是哪一款、文件是否安装成功，以及是否已设为当前桌宠。`;
   }
 
   async function copyPrompt(textarea, details) {
@@ -48,7 +52,7 @@
   }
 
   async function initialize() {
-    const response = await fetch('downloads/agent-install.json?v=20261006-gallery');
+    const response = await fetch('downloads/agent-install.json?v=20261009-petdex');
     if (!response.ok) throw new Error('Installation information is unavailable');
     const manifest = await response.json();
     const pageUrl = new URL(document.baseURI);

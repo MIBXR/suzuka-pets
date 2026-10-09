@@ -50,6 +50,10 @@
 
 将完整文件夹交给支持 sprite v2 的桌宠应用或 Agent，读取 `pet.json` 并导入原始 `spritesheet.png`。是否设为当前桌宠由你选择；预览 GIF 用于观看动作，实际触发与播放节奏由应用决定。
 
+Agent 安装不要求 `codex` 命令。Codex 使用实际 `CODEX_HOME`（默认 `~/.codex`）下的 `pets/suzuka-tracksuit-halfbody-handdrawn/`；其他 Agent 使用其文档或配置确认的兼容宠物目录；没有可用目录时使用 `~/.petdex/pets/suzuka-tracksuit-halfbody-handdrawn/`。
+
+包内 `pet.json` 是便携元数据。Codex / PetDex 本地安装时，在目标配置中保留原字段并设置 `id` 为 `slug`、`displayName` 为 `name`、`description` 为原描述、`spritesheetPath` 为 `spritesheet.png`、`spriteVersionNumber` 为 `2`；其他 Agent 按其支持的格式适配。原始 PNG 保持不变；文件安装后由支持 v2 的客户端加载，并按你的选择启用。
+
 图集为 **1536 × 2288** 像素，**8 列 × 11 行**，单格 **192 × 208**；包含九种日常动作和十六个注视方向。作品版本与 sprite 协议版本分别标注。
 
 ## 来源与署名
