@@ -285,7 +285,11 @@
       {name:'set_suzuka_animation_playback',title:'设置铃鹿动画播放',description:'暂停或继续首屏与动作剧场的网页动画。',inputSchema:{type:'object',properties:{paused:{type:'boolean'}},required:['paused'],additionalProperties:false},annotations:{readOnlyHint:true,untrustedContentHint:false},execute:async input=>{if(!input||typeof input.paused!=='boolean')throw new Error('Invalid playback state');return setPaused(input.paused);}},
       {name:'preview_suzuka_pet',title:'查看一只铃鹿的动作',description:'跳到动作剧场，展示打招呼并高亮胜负服全身款或运动服半身款。',inputSchema:{type:'object',properties:{pet:{type:'string',enum:['full','half']}},required:['pet'],additionalProperties:false},annotations:{readOnlyHint:true,untrustedContentHint:false},execute:async input=>{if(!input||!Object.hasOwn(pets,input.pet))throw new Error('Unknown pet');return previewPet(input.pet);}}
     ];
-    tools.forEach(tool=>{try{Promise.resolve(context.registerTool(tool,{signal:lifecycle.signal})).catch(()=>{});}catch{}});
+    tools.forEach(tool=>{
+      const reportError=error=>console.warn('Failed to register Suzuka tool '+tool.name,error);
+      try{Promise.resolve(context.registerTool(tool,{signal:lifecycle.signal})).catch(reportError);}
+      catch(error){reportError(error);}
+    });
     window.addEventListener('pagehide',()=>lifecycle.abort(),{once:true});
   }
 })();
