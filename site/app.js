@@ -68,14 +68,14 @@
     motionRows[pet].set(row,asset);
     asset.promise=motionCatalog.then(catalog=>new Promise((resolve,reject)=>{
       const definition=catalog.pets[pet].rows[row];
-      asset.frames=definition.frames;asset.revision=definition.sha256;
+      asset.frames=definition.frames;
       asset.image.onload=()=>{
         if(asset.image.naturalWidth!==WEB_CELL_W*asset.frames.length||asset.image.naturalHeight!==WEB_CELL_H){reject(new Error('Animation pixels do not match the manifest'));return;}
         asset.status='ready';resolve(asset);
       };
       asset.image.onerror=()=>reject(new Error('Animation could not be loaded'));
       asset.image.decoding='async';
-      asset.image.src='assets/motion-hd/'+pets[pet].file+'-'+row+'.webp?v='+definition.sha256.slice(0,16);
+      asset.image.src='assets/motion-hd/'+pets[pet].file+'-'+row+'.webp?v='+ASSET_VERSION;
     })).catch(error=>{asset.status='error';throw error;});
     asset.promise.then(()=>{assetStatus();render(performance.now(),true);}).catch(()=>{
       const status=document.getElementById('asset-status');status.setAttribute('role','alert');status.classList.remove('ready');status.textContent='这个动作暂时没载入，可以刷新再试。';
@@ -117,7 +117,6 @@
     sprite.lastFrame=key;sprite.element.dataset.frame=row+':'+column;
     sprite.element.dataset.source='original-hd';
     sprite.element.dataset.sourceCell=frame.width+'x'+frame.height;
-    sprite.element.dataset.assetRevision=asset.revision;
     sprite.element.classList.add('loaded');
     sprite.element.querySelector('.sprite-poster').setAttribute('aria-hidden','true');
   }
