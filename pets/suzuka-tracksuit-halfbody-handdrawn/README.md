@@ -10,7 +10,7 @@
 
 <p align="center"><img src="package/previews/idle.gif" width="192" alt="运动服铃鹿待机"><img src="package/previews/running.gif" width="192" alt="运动服铃鹿工作状态"></p>
 
-换上红白运动服，铃鹿也变得更松弛了。半眯的绿眼睛、三角形小笑嘴、直直的栗色长发，配上粗一些的手绘线条和暖色颗粒感，构成一只只露出小小上身的桌面伙伴。
+换上红白运动服，铃鹿也变得更松弛了。半眯的绿眼睛、三角形小笑嘴、直直的栗色长发，配上粗一些的手绘线条和暖色颗粒感，构成一只仅露出小小上身的桌面伙伴。
 
 ## 她的模样
 
@@ -68,6 +68,6 @@ v1.3 沿用保存的动作原稿，调整挥手首帧的位置，让抬手与回
 
 ## 来源与署名
 
-角色来自[《赛马娘 Pretty Derby》](https://umamusume.jp/character/silencesuzuka)。两款桌宠的形象与画风参考保留署名：[Pixiv 插画家 · ID 1621147](https://www.pixiv.net/users/1621147)。桌宠通过 AI 辅助生成与后续整理制作；角色及参考插画的权利归原权利人。
+角色来自[《赛马娘 Pretty Derby》](https://umamusume.jp/character/silencesuzuka)。两款桌宠都保留了形象与画风参考的署名：[Pixiv 插画家 · ID 1621147](https://www.pixiv.net/users/1621147)。桌宠通过 AI 辅助生成与后续整理制作；角色及参考插画的权利归原权利人。
 
 [返回作品首页](../../README.md)

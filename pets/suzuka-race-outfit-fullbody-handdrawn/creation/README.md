@@ -10,9 +10,9 @@
 
 ## 形象从哪里来
 
-把熟悉的绿白胜负服缩成一只二头身小铃鹿。栗色长发、碧绿眼睛、深紫手套与两条耳饰飘带保留下来，柔和的配色和略带手感的线条，让她在桌面的一角也显得安静、轻盈。
+把熟悉的绿白胜负服缩成一只二头身小铃鹿。栗色长发、碧绿眼睛、深紫手套与两条耳饰飘带保留下来，柔和的配色和略带手绘感的线条，让她在桌面的一角也显得安静、轻盈。
 
-角色来自[《赛马娘 Pretty Derby》](https://umamusume.jp/character/silencesuzuka)。两款桌宠的形象与画风参考保留署名：[Pixiv 插画家 · ID 1621147](https://www.pixiv.net/users/1621147)。桌宠通过 AI 辅助生成与后续整理制作；角色及参考插画的权利归原权利人。
+角色来自[《赛马娘 Pretty Derby》](https://umamusume.jp/character/silencesuzuka)。两款桌宠的形象与画风以 [Pixiv 插画家 · ID 1621147](https://www.pixiv.net/users/1621147) 的插画为参考。桌宠通过 AI 辅助生成与后续整理制作；角色及参考插画的权利归原权利人。
 
 <table>
 <tr><td align="center" width="50%"><b>采用的主形象</b><br><a href="references/canonical-base.png"><img src="references/canonical-base.png" width="260" alt="采用的角色主形象参考"></a></td><td align="center" width="50%"><b>成品中的日常姿态</b><br><img src="../package/previews/idle.gif" width="192" alt="胜负服铃鹿最终待机动作"></td></tr>
@@ -30,7 +30,7 @@
 
 先从参考中确定角色特征与手绘表达，保存[主形象提示词](prompts/character.md)和采用的角色主图。随后按动作分别生成连续姿态：日常动作保留各自的节奏，注视动作围绕同一套身体构图变化。
 
-生成阶段的高清图保存在 `materials/`，对应提示词保存在 `prompts/`。作品经过透明处理、选帧、位置与配色调整后，成为 `package/` 中的最终图集；下表把每个动作的想法、原稿和最终表现放在一起。原稿保留生成时的状态，部分可见用于去背景的纯色底。
+生成阶段的高清图保存在 `materials/`，对应提示词保存在 `prompts/`。作品经过透明处理、选帧、位置与配色调整后，成为 `package/` 中的最终图集；下表把每个动作的想法、原稿和最终表现放在一起。原稿保留生成时的状态，部分带有用于去背景的纯色底。
 
 ## 动作设计与原稿
 
@@ -38,7 +38,7 @@
 | :---: | --- | --- |
 | **待机**<br><img src="../package/previews/idle.gif" width="112" alt="胜负服铃鹿待机"><br><sub>6 帧</sub> | 让睁眼、闭眼、重新睁眼形成自然循环；其他部位保持安静，让待机成为整套动作的视觉参照。 | [提示词](prompts/idle.md)<br>[高清原稿](../materials/idle.png) |
 | **向右跑**<br><img src="../package/previews/running-right.gif" width="112" alt="胜负服铃鹿向右跑"><br><sub>8 帧</sub> | 以向右的完整跑姿表现移动，发尾、尾巴与裙摆跟随步态，保持全身轮廓可读。 | [提示词](prompts/running-right.md)<br>[高清原稿](../materials/running-right.png) |
-| **向左跑**<br><img src="../package/previews/running-left.gif" width="112" alt="胜负服铃鹿向左跑"><br><sub>8 帧</sub> | 保存独立的向左跑姿，沿用服装与耳饰细节，让两个移动方向都能辨认角色。 | [提示词](prompts/running-left.md)<br>[高清原稿](../materials/running-left.png) |
+| **向左跑**<br><img src="../package/previews/running-left.gif" width="112" alt="胜负服铃鹿向左跑"><br><sub>8 帧</sub> | 保存独立的向左跑姿，沿用服装与耳饰细节，让角色向两个方向移动时都能被辨认。 | [提示词](prompts/running-left.md)<br>[高清原稿](../materials/running-left.png) |
 | **挥手**<br><img src="../package/previews/waving.gif" width="112" alt="胜负服铃鹿挥手"><br><sub>4 帧</sub> | 头、肩、胸前饰物和双脚保持固定，只让连接在肩部的手臂抬起、摆动，再回到胸前。 | [提示词](prompts/waving.md)<br>[高清原稿](../materials/waving.png) |
 | **跳跃**<br><img src="../package/previews/jumping.gif" width="112" alt="胜负服铃鹿跳跃"><br><sub>5 帧</sub> | 从站立到起跳、腾空和落地，用身体位移表达跳跃，保持头身大小一致。 | [提示词](prompts/jumping.md)<br>[高清原稿](../materials/jumping.png) |
 | **失落**<br><img src="../package/previews/failed.gif" width="112" alt="胜负服铃鹿失落"><br><sub>8 帧</sub> | 耳朵下垂、头部低下、闭眼停顿，再恢复站姿；情绪来自姿态变化，保留原有柔和配色。 | [提示词](prompts/failed.md)<br>[高清原稿](../materials/failed.png) |

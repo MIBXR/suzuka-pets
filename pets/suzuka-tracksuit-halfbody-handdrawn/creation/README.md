@@ -10,9 +10,9 @@
 
 ## 形象从哪里来
 
-换上红白运动服，铃鹿也变得更松弛了。半眯的绿眼睛、三角形小笑嘴、直直的栗色长发，配上粗一些的手绘线条和暖色颗粒感，构成一只只露出小小上身的桌面伙伴。
+换上红白运动服，铃鹿也变得更松弛了。半眯的绿眼睛、三角形小笑嘴、直直的栗色长发，配上粗一些的手绘线条和暖色颗粒感，构成一只仅露出小小上身的桌面伙伴。
 
-角色来自[《赛马娘 Pretty Derby》](https://umamusume.jp/character/silencesuzuka)。两款桌宠的形象与画风参考保留署名：[Pixiv 插画家 · ID 1621147](https://www.pixiv.net/users/1621147)。桌宠通过 AI 辅助生成与后续整理制作；角色及参考插画的权利归原权利人。
+角色来自[《赛马娘 Pretty Derby》](https://umamusume.jp/character/silencesuzuka)。两款桌宠都保留了形象与画风参考的署名：[Pixiv 插画家 · ID 1621147](https://www.pixiv.net/users/1621147)。桌宠通过 AI 辅助生成与后续整理制作；角色及参考插画的权利归原权利人。
 
 <table>
 <tr><td align="center" width="50%"><b>采用的主形象</b><br><a href="references/canonical-base.png"><img src="references/canonical-base.png" width="260" alt="采用的角色主形象参考"></a></td><td align="center" width="50%"><b>成品中的日常姿态</b><br><img src="../package/previews/idle.gif" width="192" alt="运动服铃鹿最终待机动作"></td></tr>
@@ -41,7 +41,7 @@
 | **向左移动**<br><img src="../package/previews/running-left.gif" width="112" alt="运动服铃鹿向左移动"><br><sub>8 帧</sub> | 用朝左的小幅转向、伸拳和收拳表达拖动；画面左侧耳饰与右侧发夹保持原来的方位。 | [提示词](prompts/running-left.md)<br>[高清原稿](../materials/running-left.png) |
 | **挥手**<br><img src="../package/previews/waving.gif" width="112" alt="运动服铃鹿挥手"><br><sub>4 帧</sub> | 手臂从低位抬到脸旁，再回到起点；保持头、身体与肩部稳定，让挥手循环自然衔接。 | [提示词](prompts/waving.md)<br>[高清原稿](../materials/waving.png) |
 | **跳跃**<br><img src="../package/previews/jumping.gif" width="112" alt="运动服铃鹿跳跃"><br><sub>5 帧</sub> | 通过上身上移和落回表现小跳跃，保持头像大小与半身服装轮廓。 | [提示词](prompts/jumping.md)<br>[高清原稿](../materials/jumping.png) |
-| **失落**<br><img src="../package/previews/failed.gif" width="112" alt="运动服铃鹿失落"><br><sub>8 帧</sub> | 从放松神情过渡到耳朵下垂、低头闭眼，再逐步恢复，让失落仍带着原来的克制表情。 | [提示词](prompts/failed.md)<br>[高清原稿](../materials/failed.png) |
+| **失落**<br><img src="../package/previews/failed.gif" width="112" alt="运动服铃鹿失落"><br><sub>8 帧</sub> | 从放松神情过渡到耳朵下垂、低头闭眼，再逐步恢复，让角色失落时仍保留原来的克制表情。 | [提示词](prompts/failed.md)<br>[高清原稿](../materials/failed.png) |
 | **等待回应**<br><img src="../package/previews/waiting.gif" width="112" alt="运动服铃鹿等待回应"><br><sub>6 帧</sub> | 双手垂下，只有很轻的歪头与眨眼；发侧的小省略号按节奏改变三个点的深浅。 | [提示词](prompts/waiting.md)<br>[高清原稿](../materials/waiting.png) |
 | **工作**<br><img src="../package/previews/running.gif" width="112" alt="运动服铃鹿工作"><br><sub>6 帧</sub> | 固定灰绿色笔记本的盖板、转轴和底座，只让贴在键盘上的小手交替按下，保留待机的脸型和眼色。 | [提示词](prompts/running.md)<br>[高清原稿](../materials/running.png) |
 | **检查与思考**<br><img src="../package/previews/review.gif" width="112" alt="运动服铃鹿检查与思考"><br><sub>6 帧</sub> | 一只手始终托在下巴旁，目光左右查看并轻轻点头；中间加入一次完整眨眼。 | [提示词](prompts/review.md)<br>[高清原稿](../materials/review.png) |
@@ -61,7 +61,7 @@
 - [方向与边界参考板](references/direction-support-and-boundaries.png)
 - [注视使用的中性姿态](references/look-neutral-idle.png)
 
-注视方向采用保存的中性姿态参考；待机的眨眼原稿单独保留，两者各自承担不同的动作设计。
+注视方向采用保存的中性姿态参考；待机的眨眼原稿单独保留，两者用于不同的动作设计。
 
 ## 当前作品
 
