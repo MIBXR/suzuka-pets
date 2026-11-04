@@ -8,7 +8,7 @@
 
 <p align="center"><a href="#动作预览">全部动作</a> &nbsp; · &nbsp; <a href="spritesheet.png">正式图集</a> &nbsp; · &nbsp; <a href="pet.json">桌宠信息</a> &nbsp; · &nbsp; <a href="https://github.com/MIBXR/suzuka-pets/releases/tag/v1.3-suzuka-race-outfit-fullbody-handdrawn">发布页</a></p>
 
-把熟悉的绿白胜负服缩成一只二头身小铃鹿。栗色长发、碧绿眼睛、深紫手套与两条耳饰飘带保留下来，柔和的配色和略带手感的线条，让她在桌面的一角也显得安静、轻盈。
+把熟悉的绿白胜负服缩成一只二头身小铃鹿。栗色长发、碧绿眼睛、深紫手套与两条耳饰飘带保留下来，柔和的配色和略带手绘感的线条，让她在桌面的一角也显得安静、轻盈。
 
 ## 动作预览
 
@@ -58,6 +58,6 @@ Agent 安装不要求 `codex` 命令。Codex 使用实际 `CODEX_HOME`（默认 
 
 ## 来源与署名
 
-角色来自[《赛马娘 Pretty Derby》](https://umamusume.jp/character/silencesuzuka)。两款桌宠的形象与画风参考保留署名：[Pixiv 插画家 · ID 1621147](https://www.pixiv.net/users/1621147)。桌宠通过 AI 辅助生成与后续整理制作；角色及参考插画的权利归原权利人。
+角色来自[《赛马娘 Pretty Derby》](https://umamusume.jp/character/silencesuzuka)。两款桌宠的形象与画风以 [Pixiv 插画家 · ID 1621147](https://www.pixiv.net/users/1621147) 的插画为参考。桌宠通过 AI 辅助生成与后续整理制作；角色及参考插画的权利归原权利人。
 
 [完整创作记录](https://github.com/MIBXR/suzuka-pets/tree/main/pets/suzuka-race-outfit-fullbody-handdrawn/creation)

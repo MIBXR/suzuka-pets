@@ -23,7 +23,7 @@
 
 ## 动作剧场
 
-两款都完整展示九种日常动作与十六方向注视。这里的 GIF 取自各自的成品图集；点击动图可单独查看。
+两款都完整展示九种日常动作与十六个注视方向。这里的 GIF 取自各自的成品图集；点击动图可单独查看。
 
 ### 01 · 胜负服铃鹿
 
@@ -98,7 +98,7 @@
 
 [网站介绍与两张页面预览](site/README.md) · [完整网站源码与素材](site/)
 
-截图来自仓库中的当前网页。网站保存自己的页面、图片、动作条带和下载包，可以作为完整的网站作品单独浏览与更新。
+截图来自仓库中的当前网页。网站包含页面、图片、动作条带和下载包，可以作为完整的网站作品单独浏览与更新。
 
 ## 下载与收藏
 
@@ -109,7 +109,7 @@
 
 便携包包含 sprite v2 正式图集、必要的桌宠信息和逐动作 GIF。[全部发布](https://github.com/MIBXR/suzuka-pets/releases)中可以找到各款的其他版本，对应提交保留当时的作品与制作资料。
 
-网站可复制的 Agent 指令会按目标环境选择安装位置，无需 `codex` 命令：Codex 使用实际 `CODEX_HOME`（默认 `~/.codex`）下的 `pets/<slug>/`；其他 Agent 使用其文档或配置确认的兼容宠物目录；没有可用目录时使用 PetDex 的 `~/.petdex/pets/<slug>/`。包内 `pet.json` 保存便携元数据，本地安装按客户端格式适配名称、描述、图集路径与 v2 标记。是否启用由你选择；文件安装与客户端加载分别核实。
+将网站上的安装指令复制给 Agent，它会按目标环境选择安装位置，无需 `codex` 命令：Codex 使用实际 `CODEX_HOME`（默认 `~/.codex`）下的 `pets/<slug>/`；其他 Agent 使用其文档或配置确认的兼容宠物目录；没有可用目录时使用 PetDex 的 `~/.petdex/pets/<slug>/`。包内 `pet.json` 保存便携元数据，本地安装按客户端格式适配名称、描述、图集路径与 v2 标记。是否启用由你选择；文件安装情况和客户端加载情况需分别确认。
 
 目录与本地配置参考 [Codex 桌宠约定](https://github.com/openai/skills/blob/main/skills/.curated/hatch-pet/references/codex-pet-contract.md)和 [PetDex CLI 文档](https://github.com/crafter-station/petdex/blob/main/packages/petdex-cli/README.md)。
 
