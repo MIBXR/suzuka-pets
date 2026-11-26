@@ -5,15 +5,15 @@
   const ASSET_VERSION='20261004i';
   const pets={full:{name:'胜负服铃鹿',file:'full-body'},half:{name:'运动服铃鹿',file:'half-body'}};
   const states=[
-    {id:'idle',label:'发呆',durations:[3000,100,100,100,100,3200],description:'先在这里待一会儿。'},
-    {id:'running-right',label:'向右跑',durations:[120,120,120,120,120,120,120,220],description:'往右边，出发。'},
-    {id:'running-left',label:'向左跑',durations:[120,120,120,120,120,120,120,220],description:'换个方向，小跑几步。'},
-    {id:'waving',label:'打个招呼',durations:[140,140,140,280],description:'你好呀。'},
-    {id:'jumping',label:'跳一下',durations:[140,140,140,140,280],description:'轻轻跳起来，再落回原地。'},
-    {id:'failed',label:'小失落',durations:[140,140,140,140,140,140,140,240],description:'没关系，休息一下再试。'},
-    {id:'waiting',label:'等你回应',durations:[150,150,150,150,150,260],description:'不着急，我等你。'},
-    {id:'running',label:'认真工作',durations:[120,120,120,120,120,220],description:'小电脑打开了，开始干活。'},
-    {id:'review',label:'检查一下',durations:[150,150,150,150,150,280],description:'托着下巴，再认真看一眼。'}
+    {id:'idle',label:'发呆',durations:[3000,100,100,100,100,3200],description:'安静站着待机，偶尔眨一下眼。'},
+    {id:'running-right',label:'向右跑',durations:[120,120,120,120,120,120,120,220],description:'迈开步子往右边小跑过去。'},
+    {id:'running-left',label:'向左跑',durations:[120,120,120,120,120,120,120,220],description:'调转方向，轻快地往左边跑。'},
+    {id:'waving',label:'打个招呼',durations:[140,140,140,280],description:'抬起手轻轻挥动，向你问好。'},
+    {id:'jumping',label:'跳一下',durations:[140,140,140,140,280],description:'原地轻盈地跃起，再稳稳落地。'},
+    {id:'failed',label:'小失落',durations:[140,140,140,140,140,140,140,240],description:'稍微有些苦恼地垂下视线，缓一缓再继续。'},
+    {id:'waiting',label:'等你回应',durations:[150,150,150,150,150,260],description:'安静停在原地，耐心等你的下一步操作。'},
+    {id:'running',label:'认真工作',durations:[120,120,120,120,120,220],description:'抱出小电脑，专心致志地敲击键盘。'},
+    {id:'review',label:'检查一下',durations:[150,150,150,150,150,280],description:'托着脸颊或低头端详，仔细确认细节。'}
   ];
   const directionNames=['向上','偏右上','右上','偏上右','向右','偏下右','右下','偏右下','向下','偏左下','左下','偏下左','向左','偏上左','左上','偏左上'];
   const motionRows={full:new Map(),half:new Map()};
