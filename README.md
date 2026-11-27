@@ -85,20 +85,24 @@
 
 ## 网站预览
 
-独立的展示网站把两款铃鹿放在同一个小世界里：认识角色、切换九种动作、让视线跟随指针，或把喜欢的一款带回桌面。
+《无声铃鹿的午后桌边》从一张暖米色的音乐选择页开始。Jewel 萝卜图标跟着「开启音乐」或「关闭音乐」移动。开启后会听到《Silent Star》，入场后也可以切换到《Endless Dream》。
 
-[![铃鹿展示网站：首页实际页面预览](site/preview.jpg)](site/README.md)
+[![午后桌边，运动服铃鹿站在打开 Codex 的笔记本旁](site/preview.jpg)](site/preview.jpg)
+
+把铃鹿拖进笔记本里的 Codex，便可体验安装模拟。默认是运动服半身款 v1.3，点「换装」可切为胜负服全身款 v1.3。拒绝写入可以重试，允许后会发出十张动作卡，其中九张播放高清动作，一张可以转动十六方向注视罗盘。「重新发牌」会打乱手牌顺序。
 
 <details>
-<summary>展开动作剧场预览</summary>
+<summary>查看动作手札和桌宠收养单</summary>
 
-![铃鹿展示网站：双宠动作剧场实际页面预览](site/preview-motion.jpg)
+![动作手札，十张动作卡在桌面呈扇形展开](site/preview-motion.jpg)
+
+![桌宠收养单，两款装束的便携 ZIP 与 Agent 安装指令](site/preview-folio.jpg)
 
 </details>
 
-[网站介绍与两张页面预览](site/README.md) · [完整网站源码与素材](site/)
+右上角的「下载安装」可以直接打开「桌宠收养单」，动作手札里的「带走这只铃鹿」也通向同一页。选好装束后，可以下载 ZIP，或选定是否启用桌宠，再复制安装指令给 Agent。
 
-截图来自仓库中的当前网页。网站包含页面、图片、动作条带和下载包，可以作为完整的网站作品单独浏览与更新。
+[浏览说明与三张页面预览](site/README.md) · [网站源码与素材](site/)
 
 ## 下载与收藏
 
@@ -117,4 +121,4 @@
 
 这个收藏从角色与插画参考出发，用 Codex 和 AI 生图辅助制作动作，保留采用的提示词、高清生成原稿与最终成品。每款作品都可以沿着“参考 → 动作想法 → 原稿 → 成品”的顺序阅读。
 
-角色来自[《赛马娘 Pretty Derby》](https://umamusume.jp/character/silencesuzuka)。两款桌宠的形象与画风参考保留署名：[Pixiv 插画家 · ID 1621147](https://www.pixiv.net/users/1621147)。桌宠通过 AI 辅助生成与后续整理制作；角色及参考插画的权利归原权利人。
+无声铃鹿出自《赛马娘 Pretty Derby》。网站使用的角色、Jewel 图标以及《Silent Star》《Endless Dream》的权利归各自权利人。两款桌宠的造型和画风参考了 Pixiv 插画家 ID 1621147 的作品，参考插画的著作权归原作者。[官方角色介绍](https://umamusume.jp/character/silencesuzuka) · [插画家主页](https://www.pixiv.net/users/1621147)
