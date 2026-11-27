@@ -1,131 +1,83 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#e9f1dd" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#17231e" media="(prefers-color-scheme: dark)">
-  <title>无声铃鹿 · 手绘桌宠（胜负服与运动服）</title>
-  <meta name="description" content="《赛马娘 Pretty Derby》无声铃鹿同人手绘桌宠：包含绿白胜负服全身款与红白运动服半身款，支持 9 组日常动作与 16 方向注视预览及便携包下载。">
-  <link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href="favicon.ico?v=2">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/suzuka-32.png?v=2">
-  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/icons/suzuka-180.png?v=2">
-  <link rel="stylesheet" href="styles.css?v=20261126">
-  <script src="app.js?v=20261126" defer></script>
-  <script src="agent-install.js?v=20261009-petdex" defer></script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f5f0e6"><title>无声铃鹿的午后桌边</title>
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href="favicon.ico?v=2">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/suzuka-32.png?v=2">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/icons/suzuka-180.png?v=2">
+<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="gallery.css"><link rel="stylesheet" href="folio.css">
+<script type="module" src="app.js"></script>
 </head>
-<body>
-  <a class="skip-link" href="#main">跳到内容</a>
-  <header class="site-header wrap">
-    <a class="brand" href="#main" aria-label="无声铃鹿桌宠首页"><img class="mark" src="assets/icons/suzuka-180.png" alt="" width="37" height="37"><span>无声铃鹿 · 手绘桌宠</span></a>
-    <nav aria-label="主要导航"><a href="#works">两款造型</a><a href="#motion">动作预览</a><a href="#downloads">安装下载</a><a href="#history">动作细节</a><a href="#credits">来源说明</a></nav>
-    <span class="header-note">SILENCE SUZUKA</span>
-  </header>
-  <main id="main">
-    <section class="hero wrap" aria-label="无声铃鹿手绘桌宠">
-      <div class="intro">
-        <p class="eyebrow">SILENCE SUZUKA · 赛马娘同人桌宠</p>
-        <h1>无声铃鹿<br><span>手绘桌宠</span></h1>
-        <h2 class="subtitle">胜负服全身款与运动服半身款</h2>
-        <p class="lede">一套是赛场上清爽的绿白胜负服，一套是日常穿的红白运动服。<br>两只画风柔和的铃鹿，安静地待在屏幕一角陪你办公。</p>
-        <div class="hero-cta"><a class="button primary" href="#motion">在线试玩动作</a><a class="button" href="#downloads">下载桌宠</a></div>
-        <p class="source-note">造型与画风参考：<a href="https://www.pixiv.net/users/1621147" target="_blank" rel="noopener noreferrer">Pixiv 插画家 · ID 1621147</a></p>
+<body data-scene="gate">
+<main id="world" inert aria-label="铃鹿的午后桌边">
+ <div id="desk" class="desk">
+  <div id="plate" class="plate">
+   <picture>
+    <source media="(aspect-ratio < 28/25)" srcset="assets/desk/desk-portrait.webp">
+    <source media="(aspect-ratio > 37/20)" srcset="assets/desk/desk-wide.webp">
+    <img id="art" decoding="sync" src="assets/desk/desk-afternoon.webp" alt="花园的日光穿过窗帘，落在木桌与银色笔记本上。">
+   </picture>
+   <section id="screen" aria-label="桌上的 Codex 安装演示">
+    <div class="cx-title"><button id="sidebarToggle" aria-label="切换侧栏" aria-expanded="true"><svg class="icon" aria-hidden="true"><use href="icons.svg#panel"></use></svg></button><svg class="icon" aria-hidden="true"><use href="icons.svg#prev"></use></svg><svg class="icon" aria-hidden="true"><use href="icons.svg#next"></use></svg><span>文件</span><span>编辑</span><span>视图</span><span>帮助</span></div>
+    <div class="cx-body">
+     <div class="cx-rail" aria-hidden="true"><span class="rail-home"><svg class="icon" aria-hidden="true"><use href="icons.svg#home"></use></svg></span><svg class="icon" aria-hidden="true"><use href="icons.svg#thread"></use></svg><svg class="icon" aria-hidden="true"><use href="icons.svg#checklist"></use></svg><svg class="icon" aria-hidden="true"><use href="icons.svg#clock"></use></svg><svg class="icon" aria-hidden="true"><use href="icons.svg#more"></use></svg><svg class="icon" aria-hidden="true"><use href="icons.svg#folder"></use></svg><svg class="icon" aria-hidden="true"><use href="icons.svg#apps"></use></svg><svg class="icon" aria-hidden="true"><use href="icons.svg#sliders"></use></svg><span class="rail-foot"><svg class="icon" aria-hidden="true"><use href="icons.svg#gear"></use></svg></span></div>
+     <aside class="cx-side" id="sidebar" aria-label="Codex 侧栏">
+      <div class="sidebar-top"><strong>Codex</strong><svg class="icon" aria-hidden="true"><use href="icons.svg#down"></use></svg><span></span><svg class="icon" aria-hidden="true"><use href="icons.svg#filter"></use></svg><svg class="icon" aria-hidden="true"><use href="icons.svg#search"></use></svg></div>
+      <div class="sidebar-scroll"><div class="side-row"><svg class="icon" aria-hidden="true"><use href="icons.svg#write"></use></svg>新聊天</div>
+      <button class="side-row pet-row" id="installedPet" hidden><canvas id="sidebarPet" width="96" height="104"></canvas>Suzuka</button>
+      <div class="folders"><div><svg class="icon" aria-hidden="true"><use href="icons.svg#shoe"></use></svg>桌宠制作<svg class="icon" aria-hidden="true"><use href="icons.svg#next"></use></svg></div><div><svg class="icon" aria-hidden="true"><use href="icons.svg#palette"></use></svg>创作与设计<svg class="icon" aria-hidden="true"><use href="icons.svg#next"></use></svg></div><div><svg class="icon" aria-hidden="true"><use href="icons.svg#leaf"></use></svg>日常与微风<svg class="icon" aria-hidden="true"><use href="icons.svg#next"></use></svg></div><div><svg class="icon" aria-hidden="true"><use href="icons.svg#folder"></use></svg>待归档<svg class="icon" aria-hidden="true"><use href="icons.svg#next"></use></svg></div></div>
+      <div class="side-project">项目 <svg class="icon" aria-hidden="true"><use href="icons.svg#next"></use></svg></div><div class="side-recent">最近</div>
+      <div class="recent-list"><span>午后桌面 · 无声铃鹿</span><span>核对 sprite v2 图集清单</span><span>运动服半身 v1.3 打包</span><span>胜负服全身立绘核对</span></div></div>
+     </aside>
+     <section class="cx-main" aria-label="Codex 对话">
+      <div id="log" class="thread-scroll" role="log"><div id="welcome"><div id="drop"><svg class="icon" aria-hidden="true"><use href="icons.svg#codex"></use></svg><b>我们要构建什么？</b><div class="invite-line"><span id="dragHint">将桌边的铃鹿拖入此窗口安装</span><button id="invite" aria-label="直接邀请铃鹿入座">直接邀请</button></div></div></div></div>
+      <div class="composer"><div class="composer-context"><span><svg class="icon" aria-hidden="true"><use href="icons.svg#laptop"></use></svg>此计算机</span><span><svg class="icon" aria-hidden="true"><use href="icons.svg#folder"></use></svg>选择项目</span></div>
+       <div class="composer-card"><div id="compose" role="status">随心输入</div><div class="compose-tools"><button class="attach" id="attachPackage" aria-label="附加当前装束的 ZIP" title="附加当前装束的 ZIP"><svg class="icon" aria-hidden="true"><use href="icons.svg#plus"></use></svg></button><span class="access">完全访问</span><span class="composer-model"><svg class="icon" aria-hidden="true"><use href="icons.svg#bolt"></use></svg>GPT-6.2 Astra <em>Ultra</em></span><svg class="icon" aria-hidden="true"><use href="icons.svg#mic"></use></svg><button class="send" id="sendPrompt" aria-label="发送安装指令" title="发送安装指令"><svg class="icon" aria-hidden="true"><use href="icons.svg#sound"></use></svg></button></div></div>
       </div>
-      <div class="hero-art">
-        <div class="board-heading"><span>点击下方名牌可以和她打招呼</span></div>
-        <span class="board-word" aria-hidden="true">Suzuka</span>
-        <article class="hero-pet full">
-          <div class="sprite-frame hero-sprite" data-pet="full" data-context="hero"><img class="sprite-poster" src="assets/full-body-web-poster.png?v=20261004i" alt="胜负服铃鹿" width="330" height="401" fetchpriority="high" style="left:14.63780823%;top:15.83349687%;width:71.02997447%;height:79.67278255%;right:auto;bottom:auto"><canvas width="576" height="624" role="img" aria-label="胜负服铃鹿动画">胜负服铃鹿动画预览</canvas></div>
-          <button class="portrait-caption" type="button" data-greet="full" aria-label="和胜负服铃鹿打个招呼"><span class="portrait-number">01</span><span><span class="portrait-name">胜负服铃鹿</span><small>手绘全身</small></span><span class="caption-star" aria-hidden="true">✦</span></button>
-        </article>
-        <article class="hero-pet half">
-          <div class="sprite-frame hero-sprite" data-pet="half" data-context="hero"><img class="sprite-poster" src="assets/half-body-web-poster.png?v=20261004i" alt="运动服铃鹿" width="283" height="298" fetchpriority="high" style="left:8.04678490%;top:15.96852543%;width:82.11324977%;height:79.81434661%;right:auto;bottom:auto"><canvas width="576" height="624" role="img" aria-label="运动服铃鹿动画">运动服铃鹿动画预览</canvas></div>
-          <button class="portrait-caption" type="button" data-greet="half" aria-label="和运动服铃鹿打个招呼"><span class="portrait-number">02</span><span><span class="portrait-name">运动服铃鹿</span><small>手绘半身</small></span><span class="caption-star" aria-hidden="true">✦</span></button>
-        </article>
-      </div>
-    </section>
-    <div class="collection-facts wrap" aria-label="两款宠物的特点">
-      <p><strong>02</strong><span>两款造型</span></p><p><strong>09</strong><span>日常动作</span></p><p><strong>16</strong><span>注视方向</span></p>
-      <p class="facts-note">兼容 Codex、PetDex 与 Sprite v2 客户端</p>
+     </section>
     </div>
-    <section class="section works wrap" id="works" aria-labelledby="works-title">
-      <div class="section-heading"><div><p class="eyebrow">01 / 两款造型</p><h2 id="works-title">两种装束与构图，按喜好挑选</h2></div><p>两款均包含完整的 9 组状态与 16 向视线跟随，<br>可单独安装，也能同时收进列表随时切换。</p></div>
-      <div class="profile-grid"><article class="profile" id="full-profile">
-          <div class="profile-image"><span class="profile-index">01</span><span class="profile-word" aria-hidden="true">TURF</span><span class="portrait-frame"><img src="assets/full-body-hd.png?v=20261004c" alt="胜负服铃鹿的高清插画" width="1205" height="1306" loading="lazy"></span></div>
-          <div class="profile-copy"><p class="profile-kicker">SILENCE SUZUKA · v1.0</p><div class="profile-title"><h3>胜负服铃鹿</h3><span>全身手绘</span></div><p class="profile-subtitle">绿白胜负服</p><p>经典的绿白配色胜负服与左侧耳饰飘带。完整呈现全身站姿与步伐，左右奔跑和跳跃时长发与百褶裙摆都会随之摆动。</p><p class="full-name">无声铃鹿-胜负服全身手绘风格</p><ul class="detail-tags" aria-label="手绘全身特点"><li>绿白胜负服</li><li>全身构图</li></ul><div class="profile-links"><a class="profile-preview" href="#motion" data-preview="full" aria-label="看看胜负服铃鹿的动作">预览这款动作<span aria-hidden="true">✦</span></a><a class="profile-preview profile-install-link" href="#install-full" aria-label="前往胜负服铃鹿的安装区">下载与安装<span aria-hidden="true">✦</span></a></div></div>
-        </article><article class="profile half" id="half-profile">
-          <div class="profile-image"><span class="profile-index">02</span><span class="profile-word" aria-hidden="true">CASUAL</span><span class="portrait-frame"><img src="assets/half-body-hd.png?v=20261004c" alt="运动服铃鹿的高清插画" width="1254" height="1254" loading="lazy"></span></div>
-          <div class="profile-copy"><p class="profile-kicker">SILENCE SUZUKA · v1.0</p><div class="profile-title"><h3>运动服铃鹿</h3><span>半身手绘</span></div><p class="profile-subtitle">红白运动服</p><p>特雷森学园的红白运动外套，半身特写让面部神态更清晰。工作状态会抱出笔记本电脑认真敲字，等待回应时头顶还会冒出省略号气泡。</p><p class="full-name">无声铃鹿-运动服半身手绘风格</p><ul class="detail-tags" aria-label="手绘半身特点"><li>红白运动服</li><li>半身特写</li></ul><div class="profile-links"><a class="profile-preview" href="#motion" data-preview="half" aria-label="看看运动服铃鹿的动作">预览这款动作<span aria-hidden="true">✦</span></a><a class="profile-preview profile-install-link" href="#install-half" aria-label="前往运动服铃鹿的安装区">下载与安装<span aria-hidden="true">✦</span></a></div></div>
-        </article></div>
-    </section>
-    <section class="motion-section" id="motion" aria-labelledby="motion-title">
-      <div class="wrap">
-        <div class="section-heading"><div><p class="eyebrow">02 / 动作预览</p><h2 id="motion-title">两款造型同台对比试玩</h2></div><p>点击下方按钮同步切换 9 组动作，<br>或切到注视模式移动鼠标看她们转头。</p></div>
-        <div class="playground" id="playground">
-          <div class="playground-toolbar">
-            <div class="demo-tabs" role="tablist" aria-label="演示模式"><button id="motion-tab" type="button" role="tab" aria-selected="true" aria-controls="motion-panel" tabindex="0">日常动作</button><button id="gaze-tab" type="button" role="tab" aria-selected="false" aria-controls="gaze" tabindex="-1">视线跟随</button></div>
-            <button class="pause-button" id="pause" type="button" aria-pressed="false">暂停动画</button>
-          </div>
-          <div id="motion-panel" role="tabpanel" aria-labelledby="motion-tab">
-            <div class="duo-stage">
-              <figure class="stage-pet" id="full-stage" tabindex="-1"><figcaption><span>01</span><div>胜负服铃鹿<small>手绘全身</small></div></figcaption><div class="animation-surface"><div class="sprite-frame demo-sprite" data-pet="full" data-context="motion"><img class="sprite-poster" src="assets/full-body-web-poster.png?v=20261004i" alt="" width="330" height="401" style="left:14.63780823%;top:15.83349687%;width:71.02997447%;height:79.67278255%;right:auto;bottom:auto"><canvas id="motion-full" width="576" height="624" role="img" aria-label="胜负服铃鹿动画">胜负服铃鹿动画预览</canvas></div></div><p class="state-caption">发呆</p></figure>
-              <span class="duo-ampersand" aria-hidden="true">&</span>
-              <figure class="stage-pet half" id="half-stage" tabindex="-1"><figcaption><span>02</span><div>运动服铃鹿<small>手绘半身</small></div></figcaption><div class="animation-surface"><div class="sprite-frame demo-sprite" data-pet="half" data-context="motion"><img class="sprite-poster" src="assets/half-body-web-poster.png?v=20261004i" alt="" width="283" height="298" style="left:8.04678490%;top:15.96852543%;width:82.11324977%;height:79.81434661%;right:auto;bottom:auto"><canvas id="motion-half" width="576" height="624" role="img" aria-label="运动服铃鹿动画">运动服铃鹿动画预览</canvas></div></div><p class="state-caption">发呆</p></figure>
-            </div>
-            <div class="motion-controls"><div id="action-buttons" class="action-buttons" role="group" aria-label="选择动作"></div><p id="action-description" aria-live="polite">安静站着待机，偶尔眨一下眼。</p></div>
-          </div>
-          <div id="gaze" role="tabpanel" aria-labelledby="gaze-tab" hidden>
-            <div class="duo-stage gaze-zone" id="gaze-zone" aria-label="移动指针可改变两只铃鹿的注视方向">
-              <figure class="stage-pet"><figcaption><span>01</span><div>胜负服铃鹿<small>手绘全身</small></div></figcaption><div class="animation-surface"><div class="sprite-frame demo-sprite" data-pet="full" data-context="gaze"><img class="sprite-poster" src="assets/full-body-web-poster.png?v=20261004i" alt="" width="330" height="401" style="left:14.63780823%;top:15.83349687%;width:71.02997447%;height:79.67278255%;right:auto;bottom:auto"><canvas id="gaze-full" width="576" height="624" role="img" aria-label="胜负服铃鹿动画">胜负服铃鹿动画预览</canvas></div></div></figure>
-              <span class="duo-ampersand" aria-hidden="true">&</span>
-              <figure class="stage-pet half"><figcaption><span>02</span><div>运动服铃鹿<small>手绘半身</small></div></figcaption><div class="animation-surface"><div class="sprite-frame demo-sprite" data-pet="half" data-context="gaze"><img class="sprite-poster" src="assets/half-body-web-poster.png?v=20261004i" alt="" width="283" height="298" style="left:8.04678490%;top:15.96852543%;width:82.11324977%;height:79.81434661%;right:auto;bottom:auto"><canvas id="gaze-half" width="576" height="624" role="img" aria-label="运动服铃鹿动画">运动服铃鹿动画预览</canvas></div></div></figure>
-              <p id="gaze-label" aria-live="polite">向上 · 0°</p>
-            </div>
-            <div class="gaze-controls"><div class="gaze-control-heading"><p>在舞台上移动鼠标，或直接点选角度。</p><label class="follow-control"><input type="checkbox" id="follow-pointer" checked>跟随指针</label></div><div id="direction-buttons" class="direction-buttons" role="group" aria-label="手动选择注视方向"></div><p class="quiet-note">触屏设备可直接点按展示区不同位置来改变视线方向。</p></div>
-          </div>
-          <div class="playground-footer"><span>9 组动作 · 16 方向视线跟随</span><p class="quiet-note">实际桌面上的动作触发与持续时间由桌宠客户端决定。</p></div>
-          <p id="preview-status" class="sr-only" aria-live="polite"></p><p id="asset-status" class="asset-status" role="status">正在载入动画…</p>
-        </div>
-      </div>
-    </section>
-    <section class="section downloads wrap" id="downloads" aria-labelledby="downloads-title">
-      <div class="section-heading"><div><p class="eyebrow">03 / 安装下载</p><h2 id="downloads-title">选择喜欢的款式装进桌面</h2></div><p>支持复制指令交给 Agent 自动部署，<br>也可直接下载 ZIP 便携压缩包。</p></div>
-      <p class="sr-only" id="install-preview-help">点一下小铃鹿，她会挥手和你打招呼。</p>
-      <div class="install-grid">
-        <article class="install-card full" data-install-card="full" id="install-full" aria-labelledby="full-download-title">
-          <header class="install-card-header"><div class="install-pet-title"><p class="install-kicker">全身款 · 绿白胜负服</p><h3 id="full-download-title">胜负服铃鹿</h3><p class="install-official-name">无声铃鹿-胜负服全身手绘风格</p></div>
-            <button class="install-pet-preview" type="button" data-install-preview="full" aria-label="预览胜负服铃鹿的招呼动作" aria-describedby="install-preview-help"><span class="sprite-frame install-sprite" data-pet="full" data-context="install"><img class="sprite-poster" src="assets/full-body-web-poster.png?v=20261004i" alt="" width="576" height="624" loading="lazy" style="left:14.63780823%;top:15.83349687%;width:71.02997447%;height:79.67278255%;right:auto;bottom:auto"><canvas width="576" height="624" role="img" aria-label="胜负服铃鹿安装预览">胜负服铃鹿动画预览</canvas></span><span class="install-preview-tag">手绘全身</span></button>
-          </header>
-          <section class="agent-install" data-pet-install="full" aria-label="让 Agent 安装胜负服铃鹿">
-              <h4 class="agent-install-label">交给 Agent 安装<span class="install-recommended">推荐</span></h4>
-              <p class="agent-install-intro" id="full-install-help">复制指令发给你的 Agent，自动识别 Codex、兼容宿主或 PetDex 目录完成校验与安装。</p>
-              <div class="agent-install-actions"><button class="button primary" type="button" data-copy-install aria-describedby="full-install-help" disabled>复制安装指令</button><label class="agent-install-option" for="full-install-activate"><input type="checkbox" id="full-install-activate" disabled>安装后设为当前桌宠</label></div>
-              <p class="agent-install-status" role="status" aria-live="polite"></p>
-              <details class="agent-install-details"><summary>查看安装指令</summary><label class="sr-only" for="full-install-prompt">胜负服铃鹿的安装指令</label><textarea id="full-install-prompt" readonly spellcheck="false" rows="10" placeholder="正在准备安装指令…"></textarea></details>
-              <noscript><p class="agent-install-status">开启 JavaScript 后可复制安装指令，也可以直接下载压缩包按包内说明导入。</p></noscript>
-            </section>
-          <div class="manual-install"><div><h4>手动下载压缩包</h4><p>解压后按包内 README 说明导入客户端。<span data-package-size="full">ZIP · 3.66 MB</span></p></div><a class="button" href="downloads/suzuka-race-outfit-fullbody-handdrawn-portable.zip" download="suzuka-race-outfit-fullbody-handdrawn-portable.zip" data-manual-download aria-label="手动下载胜负服铃鹿压缩包">下载压缩包</a></div>
-        </article>
-        <article class="install-card half" data-install-card="half" id="install-half" aria-labelledby="half-download-title">
-          <header class="install-card-header"><div class="install-pet-title"><p class="install-kicker">半身款 · 红白运动服</p><h3 id="half-download-title">运动服铃鹿</h3><p class="install-official-name">无声铃鹿-运动服半身手绘风格</p></div>
-            <button class="install-pet-preview" type="button" data-install-preview="half" aria-label="预览运动服铃鹿的招呼动作" aria-describedby="install-preview-help"><span class="sprite-frame install-sprite" data-pet="half" data-context="install"><img class="sprite-poster" src="assets/half-body-web-poster.png?v=20261004i" alt="" width="576" height="624" loading="lazy" style="left:8.04678490%;top:15.96852543%;width:82.11324977%;height:79.81434661%;right:auto;bottom:auto"><canvas width="576" height="624" role="img" aria-label="运动服铃鹿安装预览">运动服铃鹿动画预览</canvas></span><span class="install-preview-tag">手绘半身</span></button>
-          </header>
-          <section class="agent-install" data-pet-install="half" aria-label="让 Agent 安装运动服铃鹿">
-              <h4 class="agent-install-label">交给 Agent 安装<span class="install-recommended">推荐</span></h4>
-              <p class="agent-install-intro" id="half-install-help">复制指令发给你的 Agent，自动识别 Codex、兼容宿主或 PetDex 目录完成校验与安装。</p>
-              <div class="agent-install-actions"><button class="button primary" type="button" data-copy-install aria-describedby="half-install-help" disabled>复制安装指令</button><label class="agent-install-option" for="half-install-activate"><input type="checkbox" id="half-install-activate" disabled>安装后设为当前桌宠</label></div>
-              <p class="agent-install-status" role="status" aria-live="polite"></p>
-              <details class="agent-install-details"><summary>查看安装指令</summary><label class="sr-only" for="half-install-prompt">运动服铃鹿的安装指令</label><textarea id="half-install-prompt" readonly spellcheck="false" rows="10" placeholder="正在准备安装指令…"></textarea></details>
-              <noscript><p class="agent-install-status">开启 JavaScript 后可复制安装指令，也可以直接下载压缩包按包内说明导入。</p></noscript>
-            </section>
-          <div class="manual-install"><div><h4>手动下载压缩包</h4><p>解压后按包内 README 说明导入客户端。<span data-package-size="half">ZIP · 4.14 MB</span></p></div><a class="button" href="downloads/suzuka-tracksuit-halfbody-handdrawn-portable.zip" download="suzuka-tracksuit-halfbody-handdrawn-portable.zip" data-manual-download aria-label="手动下载运动服铃鹿压缩包">下载压缩包</a></div>
-        </article>
-      </div>
-      <p class="download-note">Agent 安装与手动下载使用同一份便携包，内含透明 PNG 精灵图集、pet.json 配置、预览 GIF 与导入说明。<span>Sprite v2 规范 · 9 组动作与 16 方向视线跟随</span></p>
-    </section>
-    <section class="section history wrap" id="history" aria-labelledby="history-title"><div class="section-heading"><div><p class="eyebrow">04 / 动作细节</p><h2 id="history-title">两款造型的关键帧对比</h2></div><p>对比全身款与半身款在同一状态下的姿态设计，<br>每处小表情与道具都做了针对性绘制。</p></div><div class="timeline"><article class="history-entry"><div class="history-date"><span>01</span><span>两款 · 挥手</span></div><div class="history-story"><h3>抬手向你打招呼</h3><p>点击名牌或触发问候时，两只铃鹿都会轻轻抬起手臂挥动，眉眼弯起露出温和的笑意。</p><div class="history-pair"><figure><img src="assets/details/race-1.png" alt="胜负服铃鹿 · 挥手" width="576" height="624" loading="lazy"><figcaption>胜负服 · 挥手</figcaption></figure><figure><img src="assets/details/tracksuit-1.png" alt="运动服铃鹿 · 挥手" width="576" height="624" loading="lazy"><figcaption>运动服 · 挥手</figcaption></figure></div></div></article><article class="history-entry"><div class="history-date"><span>02</span><span>两款 · 检查</span></div><div class="history-story"><h3>托腮沉思与认真确认</h3><p>进入检查状态时，胜负服款会微微颔首端详，运动服款则单手托住脸颊陷入思考。</p><div class="history-pair"><figure><img src="assets/details/race-2.png" alt="胜负服铃鹿 · 检查" width="576" height="624" loading="lazy"><figcaption>胜负服 · 检查</figcaption></figure><figure><img src="assets/details/tracksuit-2.png" alt="运动服铃鹿 · 检查" width="576" height="624" loading="lazy"><figcaption>运动服 · 检查</figcaption></figure></div></div></article><article class="history-entry"><div class="history-date"><span>03</span><span>两款 · 待机</span></div><div class="history-story"><h3>安静驻留与自然眨眼</h3><p>日常待机时保持平稳的呼吸感与眨眼节奏，放在屏幕角落不会抢走你的注意力。</p><div class="history-pair"><figure><img src="assets/details/race-3.png" alt="胜负服铃鹿 · 待机" width="576" height="624" loading="lazy"><figcaption>胜负服 · 待机</figcaption></figure><figure><img src="assets/details/tracksuit-3.png" alt="运动服铃鹿 · 待机" width="576" height="624" loading="lazy"><figcaption>运动服 · 待机</figcaption></figure></div></div></article><article class="history-entry"><div class="history-date"><span>04</span><span>两款 · 等待</span></div><div class="history-story"><h3>耐心等你的下一步操作</h3><p>等待指令时会有细微的神态变化，运动服款头顶旁还会浮现三个小圆点。</p><div class="history-pair"><figure><img src="assets/details/race-4.png" alt="胜负服铃鹿 · 等待" width="576" height="624" loading="lazy"><figcaption>胜负服 · 等待</figcaption></figure><figure><img src="assets/details/tracksuit-4.png" alt="运动服铃鹿 · 等待" width="576" height="624" loading="lazy"><figcaption>运动服 · 等待</figcaption></figure></div></div></article><article class="history-entry"><div class="history-date"><span>05</span><span>两款 · 向右看</span></div><div class="history-story"><h3>随鼠标朝向转动视线</h3><p>每隔 22.5° 绘制一帧视线朝向，共 16 个方向，耳朵与发丝角度也会随转头自然微调。</p><div class="history-pair"><figure><img src="assets/details/race-5.png" alt="胜负服铃鹿 · 向右看" width="576" height="624" loading="lazy"><figcaption>胜负服 · 向右看</figcaption></figure><figure><img src="assets/details/tracksuit-5.png" alt="运动服铃鹿 · 向右看" width="576" height="624" loading="lazy"><figcaption>运动服 · 向右看</figcaption></figure></div></div></article><article class="history-entry"><div class="history-date"><span>06</span><span>两款 · 工作</span></div><div class="history-story"><h3>抱出笔记本电脑陪你干活</h3><p>当 Agent 或任务处于运行状态时，她们也会打开一台灰绿色小电脑专心敲键盘。</p><div class="history-pair"><figure><img src="assets/details/race-6.png" alt="胜负服铃鹿 · 工作" width="576" height="624" loading="lazy"><figcaption>胜负服 · 工作</figcaption></figure><figure><img src="assets/details/tracksuit-6.png" alt="运动服铃鹿 · 工作" width="576" height="624" loading="lazy"><figcaption>运动服 · 工作</figcaption></figure></div></div></article><article class="history-entry"><div class="history-date"><span>07</span><span>两款 · 向左看</span></div><div class="history-story"><h3>全身与半身的不同陪伴感</h3><p>喜欢完整动态可选绿白胜负服全身款，偏爱大比例表情特写则推荐红白运动服半身款。</p><div class="history-pair"><figure><img src="assets/details/race-7.png" alt="胜负服铃鹿 · 向左看" width="576" height="624" loading="lazy"><figcaption>胜负服 · 向左看</figcaption></figure><figure><img src="assets/details/tracksuit-7.png" alt="运动服铃鹿 · 向左看" width="576" height="624" loading="lazy"><figcaption>运动服 · 向左看</figcaption></figure></div></div></article></div><p class="history-note">以上静帧均截取自正式图集，可在上方预览区体验完整连贯动画。</p></section><section class="section credits wrap" id="credits" aria-labelledby="credits-title"><div class="section-heading"><div><p class="eyebrow">05 / 来源说明</p><h2 id="credits-title">画风参考与制作说明</h2></div></div><div class="making-grid"><article><span class="step">01 / 插画参考</span><h3>原画作者与视觉出处</h3><p>两款桌宠的角色造型与手绘画风均参考自 Pixiv 插画家（ID 1621147）的作品。原画著作权归插画家所有，本站仅展示基于其画风制作的同人桌宠。</p><a class="text-link" href="https://www.pixiv.net/users/1621147" target="_blank" rel="noopener noreferrer">插画家主页 · Pixiv ID 1621147</a></article><article><span class="step">02 / 制作流程</span><h3>从静态参考到多帧图集</h3><p>以原插画为基准，通过 AI 辅助生成各动作序列帧，再经过抠图去底、色彩统一与基准线对齐，打包为标准 Sprite v2 桌宠格式。</p><a class="text-link" href="https://github.com/MIBXR/suzuka-pets" target="_blank" rel="noopener noreferrer">桌宠与网站源码 · GitHub</a></article><article><span class="step">03 / 格式规范</span><h3>标准便携包结构</h3><p>下载的 ZIP 便携包内含 1536×2288 透明 PNG 图集、pet.json 元数据及各状态 GIF 预览，支持直接导入 Codex 与 PetDex。</p><a class="text-link" href="#downloads">返回下载区</a></article></div><div class="credit-strip"><p>角色出处：无声铃鹿（Silence Suzuka）·《赛马娘 Pretty Derby》</p><a href="https://umamusume.jp/character/silencesuzuka" target="_blank" rel="noopener noreferrer">官方角色介绍</a></div></section>
-  </main>
-  <footer class="site-footer wrap"><a class="brand" href="#main"><img class="mark" src="assets/icons/suzuka-180.png" alt="" width="30" height="30"><span>无声铃鹿 · 手绘桌宠</span></a><p>同人非商用作品 · 原作角色与参考画作权利归各自权利人所有。</p><a href="#history">动作细节</a></footer>
-</body>
-</html>
+   </section>
+  </div>
+  <svg id="guide" aria-hidden="true"><path id="guideLine"/><path id="guideHead"/><circle id="guideTarget"/></svg>
+  <div id="pet" class="pet"><button id="petGrip" aria-label="桌边的铃鹿，轻点打招呼，也可拖入 Codex"><canvas id="petCanvas" width="576" height="624"></canvas></button><span class="whisper" id="whisper" role="status"></span></div>
+  <div class="nameplate"><span class="seal"><svg class="icon" aria-hidden="true"><use href="icons.svg#shoe"></use></svg></span><span><b>无声铃鹿</b><i>Silence Suzuka</i></span></div>
+  <div class="desk-dock"><button id="outfitDesk" class="ribbon" aria-label="换装，当前为运动服半身"><span class="sewn"><svg class="icon" aria-hidden="true"><use href="icons.svg#hanger"></use></svg><span>换装 · <span class="outfit-label">运动服半身</span></span><svg class="icon" aria-hidden="true"><use href="icons.svg#swap"></use></svg></span></button><button class="gallery-link" id="galleryLink" hidden><svg class="icon" aria-hidden="true"><use href="icons.svg#cards"></use></svg> 动作手札</button></div>
+ </div>
+ <div id="dust" aria-hidden="true"></div>
+ <section id="gallery" aria-label="动作手札" hidden>
+  <button id="backDesk" class="quiet-nav"><svg class="icon" aria-hidden="true"><use href="icons.svg#back"></use></svg> 重回桌边</button>
+  <div class="gallery-body">
+    <div class="album-heading"><span class="album-rule"></span><svg class="icon" aria-hidden="true"><use href="icons.svg#shoe"></use></svg><h1>铃鹿的动作手札</h1><span class="album-rule"></span></div>
+    <div class="spot-wrap"><button id="previousCard" aria-label="上一张动作卡"><svg class="icon" aria-hidden="true"><use href="icons.svg#prev"></use></svg></button><article id="spotlight">
+      <div class="specimen" id="specimen"><div class="track-lines" aria-hidden="true"></div><canvas id="spotCanvas" width="576" height="624" aria-label="当前动作预览"></canvas></div>
+      <div class="spot-copy"><div class="spot-folio"><span id="spotNo"></span><span> / 10</span></div><h2 id="spotTitle"></h2><p id="spotCaption"></p><div class="playback"><button id="pauseSpot" aria-label="暂停动作"><svg class="icon" aria-hidden="true"><use href="icons.svg#pause"></use></svg></button><div><span id="frameLabel"></span><div id="filmstrip" aria-hidden="true"></div></div></div></div>
+    </article><button id="nextCard" aria-label="下一张动作卡"><svg class="icon" aria-hidden="true"><use href="icons.svg#next"></use></svg></button></div>
+    <div id="fan" role="group" aria-label="十张动作手牌"></div>
+  </div>
+  <div class="gallery-dock"><button id="redeal"><img src="assets/official/uma-jewel-cutout.png" alt="">重新发牌</button><div class="segments" id="outfitGallery" role="group" aria-label="装束切换"><button data-outfit-choice="half" aria-pressed="true">运动服半身</button><button data-outfit-choice="full" aria-pressed="false">胜负服全身</button></div><button id="takeHome"><svg class="icon" aria-hidden="true"><use href="icons.svg#download"></use></svg><span>带走这只铃鹿<span class="dock-long"> · 下载与安装</span></span></button></div>
+ </section>
+ <section id="folio" hidden aria-labelledby="downloadTitle">
+  <button id="folioBack" class="quiet-nav"><svg class="icon" aria-hidden="true"><use href="icons.svg#back"></use></svg><span>返回午后桌边</span></button>
+  <div class="folio-scroll"><article class="folio-sheet">
+   <figure class="folio-portrait">
+    <div class="portrait-mount"><span class="portrait-rules" aria-hidden="true"></span><canvas id="folioPet" width="576" height="624" aria-label="所选装束的铃鹿动态预览"></canvas></div>
+    <figcaption><strong>无声铃鹿</strong><i lang="en">Silence Suzuka</i><span id="packageTitle"></span></figcaption>
+   </figure>
+   <div class="folio-entry">
+    <header><img src="assets/official/uma-jewel-cutout.png" alt=""><h1 id="downloadTitle">桌宠收养单</h1></header>
+    <p class="folio-intro">下载便携包，或将安装指令交给你的 Agent。</p>
+    <div class="download-outfits segments" role="group" aria-label="选择下载装束"><button data-form="half">运动服半身 v1.3</button><button data-form="full">胜负服全身 v1.3</button></div>
+    <div class="package"><span><svg class="icon" aria-hidden="true"><use href="icons.svg#box"></use></svg> PetDex sprite v2</span><small>1536 × 2288 px</small></div>
+    <a id="zip" class="zip" download><svg class="icon" aria-hidden="true"><use href="icons.svg#download"></use></svg> 下载 ZIP</a><small id="packageFile"></small>
+    <label class="activation"><input id="activate" type="checkbox" checked>安装后设为当前桌宠</label>
+    <button id="copyPrompt"><svg class="icon" aria-hidden="true"><use href="icons.svg#copy"></use></svg> <span>复制 Agent 安装指令</span></button>
+    <details id="promptDetails"><summary>查看并编辑完整安装指令</summary><textarea id="promptText" aria-label="Agent 安装指令" spellcheck="false"></textarea></details>
+   </div>
+  </article></div>
+ </section>
+ <div class="music" id="music"><button id="directDownload" aria-label="下载安装"><svg class="icon" aria-hidden="true"><use href="icons.svg#download"></use></svg>下载安装</button><div class="music-pill"><button id="playMusic" aria-label="播放音乐"><svg class="icon" aria-hidden="true"><use href="icons.svg#play"></use></svg></button><button id="trackMenu" aria-expanded="false" aria-controls="tracks"><span id="trackName">Silent Star</span><svg class="icon" aria-hidden="true"><use href="icons.svg#down"></use></svg></button></div><div id="tracks" hidden><button data-track="0">Silent Star</button><button data-track="1">Endless Dream</button></div></div>
+</main>
+<section id="gate" aria-label="音乐选择"><div class="gate-center"><div class="choices" id="choices" data-choice="on"><button id="musicOn">开启音乐</button><button id="musicOff">关闭音乐</button><div class="jewel-track"><img alt="" src="assets/official/uma-jewel-cutout.png"></div></div><p id="hint" role="status"><span class="loading-dot"></span> 正在准备午后桌面</p></div></section>
+<noscript>打开 JavaScript 即可进入午后桌面，与铃鹿互动。</noscript>
+</body></html>
